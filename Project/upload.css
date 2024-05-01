@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('9-4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    color: purple;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+
+
+.inputs{
+    background: transparent;
+    max-width: 500px;
+    width: 100%;
+    margin: 30px auto;
+    height: auto;
+    padding: 20px;
+    /* border: 5px solid rgb(121, 111, 111); */
+}
+
+.inputs .part{
+    margin: 15px;
+    display: flex;
+    width: 100%;
+    font-family: Arial;
+}
+
+.inputs .part label{
+    width: 40%;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+
+.inputs .part input, textarea{
+    width: 50%;
+    font-weight: 15px;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid purple;
+    border-radius: 5px;
+    
+}
+input:hover, textarea:hover{
+    transform: scale(1.05);
+}
+
+#pic{
+    border: none;
+}
+
+.submit_btn{
+    width: auto;
+    height: 30px;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#button{
+    background-color: purple;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#button:hover{
+    transform: none;
+    background-color: white;
+    color: purple;
+    border: 2px solid purple;
+}

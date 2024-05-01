@@ -1,0 +1,157 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    font-family: Arial;
+}
+
+
+.nav{
+    border: 5px solid red;
+    height: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+#up{
+    width: 70px;
+    height: 30px;
+    background: blue;
+    border-radius: 20px;
+    position:absolute;
+    text-decoration: none;
+    text-align: center;
+    color: aliceblue;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.search{
+    border: 2px solid red;
+    background-color: wheat;
+    max-width: 600px;
+    width: 100%;
+    height: 120px;
+    margin: 5px auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 52px;
+   
+    
+    
+}
+
+
+
+.search .icon{
+    margin-left: 4.5em;
+    margin-top: 5px;
+}
+
+.search input{
+    width: 50%;
+    height: 30px;
+    margin: 5px 5px 0px 10px;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+    /* border: 2px solid black; */
+    border: none;
+
+
+
+}
+
+.ads{
+    border: 2px solid red;
+    max-width: 600px;
+    width: 100%;
+    height: 150px;
+    margin: 5px auto;
+    background-color: wheat;
+}
+
+.container{
+    border: 2px solid red;
+    margin: 5px auto;
+    height: auto;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgb(43, 242, 235);
+    display: flex;
+    unicode-bidi: isolate;
+}
+
+.photo{
+    margin: 5px 0px 0px 5px;
+    width: 192px;
+    height: 214px;
+    unicode-bidi: isolate;
+} 
+
+.photo img{
+    height: 100%;
+    width: 100%;
+    unicode-bidi: isolate;
+   
+
+}
+
+.details{
+    height: auto;
+    width: 100%;
+    unicode-bidi: isolate;
+}
+.details_input1{
+    display: flex;
+    justify-content: right;
+    border: 2px solid red;
+    padding: 5px 10px;
+    margin: 5px;
+    height: auto;
+    unicode-bidi: isolate;
+   
+}
+
+.details_input1 label{
+    width: 40%;
+    unicode-bidi: isolate;
+    
+}
+
+.details_input{
+    margin: auto 0px;
+    height: auto;
+    width: 100%;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: right;
+    unicode-bidi: isolate;
+}
+.details_input1 a{
+    background-color: blue;
+    color: white;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    padding: auto;
+    font-size: 16px;
+    font-weight: 550;
+    border-radius: 5px;
+    border: none;
+    unicode-bidi: isolate;
+    text-decoration: none;
+
+
+}
+
+a:hover{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
