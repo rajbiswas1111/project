@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | The Moharani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="login">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html">
+          <img src="./logo.png" alt="The Moharani logo" />
+          <span>The Moharani</span>
+        </a>
+        <nav class="main-nav">
+          <a href="./index.html">Home</a>
+          <a href="./products.html">Collection</a>
+          <a href="./wishlist.html">Wishlist <span id="wishlistCount">0</span></a>
+          <a href="./cart.html" class="cart-link">
+            <span class="nav-cart-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 6h14l-2 7H9L7 4H3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="10" cy="19" r="1.6" fill="currentColor"></circle>
+                <circle cx="18" cy="19" r="1.6" fill="currentColor"></circle>
+              </svg>
+            </span>
+            Cart <span id="cartCount">0</span>
+          </a>
+          <a href="./checkout.html">Checkout</a>
+          <a href="./login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="auth-layout">
+        <section class="auth-copy">
+          <p class="eyebrow">Account Access</p>
+          <h1>Login for secure shopping and private store management</h1>
+          <p>
+            Customers can login for a smooth order experience. Admin access is
+            intentionally private and not shown in navigation.
+          </p>
+          <div class="credential-card dark-panel">
+            <p><strong>Customer:</strong> customer@themoharani.com / user123</p>
+            <p><strong>Admin:</strong> Private access is intentionally not shown in public navigation.</p>
+          </div>
+        </section>
+
+        <form id="loginForm" class="panel login-form">
+          <h3>Sign In</h3>
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Password" required />
+          <button class="btn btn-primary" type="submit">Login</button>
+          <p id="loginMessage" class="status-text"></p>
+        </form>
+      </div>
+    </main>
+
+    <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noreferrer">WhatsApp</a>
+
+    <footer class="site-footer compact">
+      <div class="container footer-bottom">
+        <p>The Moharani login for customers and private admin access.</p>
+      </div>
+    </footer>
+
+    <div id="orderSuccessModal" class="success-modal hidden">
+      <div class="success-dialog">
+        <div class="success-ring"></div>
+        <h3>Order placed successfully</h3>
+        <p>Your Moharani order has been confirmed.</p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moharani Studio | Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html">
+          <img src="./logo.png" alt="The Moharani logo" />
+          <span>The Moharani</span>
+        </a>
+        <nav class="main-nav">
+          <a href="./index.html">Home</a>
+          <a href="./products.html">Collection</a>
+          <a href="./login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Private Studio Dashboard</p>
+          <h1>Admin product management</h1>
+        </div>
+      </div>
+
+      <div id="adminMessage" class="status-banner">
+        Login as admin to manage The Moharani catalog.
+      </div>
+
+      <section id="adminDashboard" class="admin-shell hidden">
+        <div id="adminStats" class="stats-grid"></div>
+
+        <div class="admin-grid">
+          <form id="productForm" class="panel form-grid">
+            <h3 id="productFormTitle">Add New Product</h3>
+            <input type="hidden" name="editId" />
+            <input name="id" placeholder="Product ID (example: TM007)" required />
+            <input name="name" placeholder="Product name" required />
+            <input name="category" placeholder="Category" required />
+            <input name="fabric" placeholder="Fabric" required />
+            <input type="number" name="price" placeholder="Price" required />
+            <input type="number" name="oldPrice" placeholder="Old price" required />
+            <input type="number" name="stock" placeholder="Stock" required />
+            <input name="badge" placeholder="Badge text" required />
+            <input name="image" placeholder="Image URL" required />
+            <input name="shortDescription" placeholder="Short description" required />
+            <textarea name="description" placeholder="Full product description" rows="4" required></textarea>
+            <label class="checkbox-line">
+              <input type="checkbox" name="featured" />
+              Feature on home page
+            </label>
+            <div class="inline-actions">
+              <button class="btn btn-primary" type="submit">Save Product</button>
+              <button id="cancelEditButton" class="small-btn hidden" type="button">Cancel Edit</button>
+            </div>
+          </form>
+
+          <section class="panel">
+            <h3>Recent Orders</h3>
+            <div id="ordersList" class="admin-list"></div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Catalog Control</p>
+              <h2>Manage products</h2>
+            </div>
+          </div>
+          <div id="adminProducts" class="admin-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <a class="whatsapp-float" href="https://wa.me/919876543210" target="_blank" rel="noreferrer">WhatsApp</a>
+
+    <footer class="site-footer compact">
+      <div class="container footer-bottom">
+        <p>Private Moharani Studio for admin editing and order visibility.</p>
+      </div>
+    </footer>
+
+    <div id="orderSuccessModal" class="success-modal hidden">
+      <div class="success-dialog">
+        <div class="success-ring"></div>
+        <h3>Order placed successfully</h3>
+        <p>Your Moharani order has been confirmed.</p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
