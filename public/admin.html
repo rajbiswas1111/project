@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | Vastra Saree House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="/">Vastra Saree House</a>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/products.html">Products</a>
+          <a href="/cart.html">Cart <span id="cartCount">0</span></a>
+          <a href="/checkout.html">Payment</a>
+          <a href="/login.html">Login</a>
+          <a href="/admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Master Admin Page</p>
+          <h1>Store dashboard and product management</h1>
+        </div>
+      </div>
+
+      <div id="adminMessage" class="status-banner">
+        Login as admin from the login page to manage your store.
+      </div>
+
+      <section id="adminDashboard" class="admin-shell hidden">
+        <div id="adminStats" class="stats-grid"></div>
+
+        <div class="admin-grid">
+          <form id="productForm" class="panel form-grid">
+            <h3>Add New Product</h3>
+            <input name="id" placeholder="Product ID (example: SR007)" required />
+            <input name="name" placeholder="Product name" required />
+            <input name="category" placeholder="Category" required />
+            <input name="fabric" placeholder="Fabric" required />
+            <input type="number" name="price" placeholder="Price" required />
+            <input type="number" name="oldPrice" placeholder="Old price" required />
+            <input type="number" name="stock" placeholder="Stock" required />
+            <input name="badge" placeholder="Badge text" required />
+            <input name="image" placeholder="Image URL" required />
+            <input name="shortDescription" placeholder="Short description" required />
+            <textarea
+              name="description"
+              placeholder="Full product description"
+              rows="4"
+              required
+            ></textarea>
+            <label class="checkbox-line">
+              <input type="checkbox" name="featured" />
+              Feature on home page
+            </label>
+            <button class="btn btn-primary" type="submit">Save Product</button>
+          </form>
+
+          <section class="panel">
+            <h3>Recent Orders</h3>
+            <div id="ordersList" class="admin-list"></div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Catalog Control</p>
+              <h2>Manage products</h2>
+            </div>
+          </div>
+          <div id="adminProducts" class="admin-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer compact">
+      <div class="container footer-bottom">
+        <p>Admin tools for product upload, stock visibility, and order tracking.</p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

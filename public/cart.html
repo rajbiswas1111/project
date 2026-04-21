@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Vastra Saree House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="cart">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="/">Vastra Saree House</a>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/products.html">Products</a>
+          <a href="/cart.html">Cart <span id="cartCount">0</span></a>
+          <a href="/checkout.html">Payment</a>
+          <a href="/login.html">Login</a>
+          <a href="/admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shopping Cart</p>
+          <h1>Your selected sarees</h1>
+        </div>
+      </div>
+
+      <div class="cart-layout">
+        <div id="cartItems" class="cart-items"></div>
+        <aside class="summary-card">
+          <h3>Order Summary</h3>
+          <div id="cartSummary"></div>
+          <a class="btn btn-primary full-width" href="/checkout.html">Proceed to Payment</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer compact">
+      <div class="container footer-bottom">
+        <p>Need help with your order? Call +91 98765 43210.</p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

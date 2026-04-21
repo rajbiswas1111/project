@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | Vastra Saree House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body data-page="products">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="/">Vastra Saree House</a>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/products.html">Products</a>
+          <a href="/cart.html">Cart <span id="cartCount">0</span></a>
+          <a href="/checkout.html">Payment</a>
+          <a href="/login.html">Login</a>
+          <a href="/admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Explore Collection</p>
+          <h1>All Sarees</h1>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter-chip active" data-category="All">All</button>
+        <button class="filter-chip" data-category="Wedding">Wedding</button>
+        <button class="filter-chip" data-category="Festive">Festive</button>
+        <button class="filter-chip" data-category="Daily Wear">Daily Wear</button>
+        <button class="filter-chip" data-category="Office Wear">Office Wear</button>
+        <button class="filter-chip" data-category="Party">Party</button>
+        <button class="filter-chip" data-category="Reception">Reception</button>
+      </div>
+
+      <div id="productsGrid" class="product-grid"></div>
+    </main>
+
+    <footer class="site-footer compact">
+      <div class="container footer-bottom">
+        <p>Shop premium sarees with trusted checkout and quick support.</p>
+      </div>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
