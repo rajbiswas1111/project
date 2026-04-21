@@ -1,0 +1,9 @@
+{
+  "name": "vastra-saree-house",
+  "version": "1.0.0",
+  "description": "Full functional saree e-commerce website with storefront, checkout, login, admin dashboard, and backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
