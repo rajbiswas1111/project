@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Orders | The Moharani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="admin-orders">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html">
+          <img src="./logo.png" alt="The Moharani logo" />
+          <span>The Moharani</span>
+        </a>
+        <nav class="main-nav">
+          <a href="./moharani-studio.html">Products</a>
+          <a href="./admin-orders.html">Orders</a>
+          <a href="./login.html">Login</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-shell">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Private Studio Orders</p>
+          <h1>Order management</h1>
+        </div>
+      </div>
+
+      <div id="adminOrdersMessage" class="status-banner">
+        Login as admin to view and update orders.
+      </div>
+
+      <section id="adminOrdersShell" class="admin-shell hidden">
+        <section class="panel">
+          <div class="admin-order-tabs">
+            <button class="admin-tab-btn active" data-order-tab="hold">On Hold (<span id="countHold">0</span>)</button>
+            <button class="admin-tab-btn" data-order-tab="pending">Pending (<span id="countPending">0</span>)</button>
+            <button class="admin-tab-btn" data-order-tab="ready">Ready to Ship (<span id="countReady">0</span>)</button>
+            <button class="admin-tab-btn" data-order-tab="shipped">Shipped (<span id="countShipped">0</span>)</button>
+            <button class="admin-tab-btn" data-order-tab="delivered">Delivered (<span id="countDelivered">0</span>)</button>
+            <button class="admin-tab-btn" data-order-tab="cancelled">Cancelled (<span id="countCancelled">0</span>)</button>
+          </div>
+          <div id="adminOrdersTabBody" class="admin-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./catalog-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+  </html>
